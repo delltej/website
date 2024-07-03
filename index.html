@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejveer Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for Algerian font */
+        #home {
+            font-family: 'Algerian', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Basic styles (can be moved to styles.css) */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .profile h1 {
+            margin: 0.5rem 0;
+        }
+
+        .profile p {
+            margin: 0.5rem 0;
+        }
+
+        .profile a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .profile a:hover {
+            text-decoration: underline;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #666;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Additional styles for the photos */
+        .photos {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .photos img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="your-photo.jpg" alt="Tejveer Singh">
+                <h1>Tejveer Singh</h1>
+                <p>Toronto, ON  | <a href="https://www.linkedin.com/in/tejveer-singh-ca" target="_blank">LinkedIn</a></p>
+                <h2>Web Developer</h2>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+    </nav>
+    <main>
+        <section id="home" class="content-section active">
+            <div class="container">
+                <h2>Profile</h2>
+                <p>Engaged and enthusiastic computer programming student with a robust skill set in web development. Proficient in HTML, CSS, JavaScript, and modern tools like React and Angular. Specialized in creating functional, user-friendly websites and dedicated to continuous improvement and learning. Eager to apply my skills to innovative web projects and contribute to dynamic initiatives.</p>
+            </div>
+        </section>
+        <section id="about" class="content-section" style="display: none;">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello, I'm Tejveer Singh, a passionate front-end developer based in Toronto, ON. I specialize in creating dynamic and user-friendly web applications. My journey into web development began during my studies, where I honed my skills in HTML, CSS, and JavaScript.</p>
+                <p>I have hands-on experience in utilizing APIs to develop practical solutions. Recently, I developed a banking website that integrates with financial APIs to provide real-time account information and transaction history. Additionally, I created a weather check website that fetches live weather data using weather APIs, helping users stay informed about current weather conditions.</p>
+                <p>Here are a few snapshots from my recent projects:</p>
+                <div class="photos">
+                    <img src="banking-website.jpg" alt="Banking Website">
+                    <img src="weather-website.jpg" alt="Weather Check Website">
+                    <img src="project-3.jpg" alt="Project 3">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="content-section" style="display: none;">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <p>Toronto, ON | 437-557-9666 | <a href="mailto:tsinghmathoda@gmail.com">tsinghmathoda@gmail.com</a></p>
+            </div>
+        </section>
+        <section id="experience" class="content-section" style="display: none;">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <p><strong>Problem Solver</strong><br> June 2023 – Present<br> Amazon, Hamilton, ON<br> As a Stow Problem Solver, analyze inventory data to identify patterns and trends. This skill translates well to SD, where data-driven decision-making is crucial. Able to work effectively with a team of 25 colleagues from different backgrounds, ensuring successful project outcomes.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tejveer Singh. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
